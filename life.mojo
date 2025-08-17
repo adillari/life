@@ -1,5 +1,15 @@
+from gridv1 import Grid
+
 def main():
-  var name: String = input("Who are you? ")
-  var greeting: String = "Hi, " + name + "!"
-  print(greeting)
-  return
+  # glider = [
+  #   [0, 1, 0, 0, 0, 0, 0, 0],
+  #   [0, 0, 1, 0, 0, 0, 0, 0],
+  #   [1, 1, 1, 0, 0, 0, 0, 0],
+  #   [0, 0, 0, 0, 0, 0, 0, 0],
+  #   [0, 0, 0, 0, 0, 0, 0, 0],
+  #   [0, 0, 0, 0, 0, 0, 0, 0],
+  #   [0, 0, 0, 0, 0, 0, 0, 0],
+  #   [0, 0, 0, 0, 0, 0, 0, 0],
+  # ]
+  start = Grid.random(8, 16)
+  print(String(start))

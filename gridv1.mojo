@@ -12,7 +12,6 @@ struct Grid(Copyable, Movable, Stringable):
         print()
 
         print(String(self))
-
         sleep(0.1)
 
         self.evolve()

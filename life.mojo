@@ -1,15 +1,7 @@
 from gridv1 import Grid
 
 def main():
-  # glider = [
-  #   [0, 1, 0, 0, 0, 0, 0, 0],
-  #   [0, 0, 1, 0, 0, 0, 0, 0],
-  #   [1, 1, 1, 0, 0, 0, 0, 0],
-  #   [0, 0, 0, 0, 0, 0, 0, 0],
-  #   [0, 0, 0, 0, 0, 0, 0, 0],
-  #   [0, 0, 0, 0, 0, 0, 0, 0],
-  #   [0, 0, 0, 0, 0, 0, 0, 0],
-  #   [0, 0, 0, 0, 0, 0, 0, 0],
-  # ]
-  start = Grid.random(8, 16)
-  print(String(start))
+  input = input("Enter a grid size for the game: ")
+  grid_size = Int(input)
+  world = Grid.random(grid_size, grid_size)
+  world.live()
